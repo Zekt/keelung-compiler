@@ -1,6 +1,7 @@
 module Keelung.Compiler.Compile.Monad where
 
 import Control.Arrow (right)
+import Control.Monad (forM)
 import Control.Monad.Except
 import Control.Monad.Reader
 import Control.Monad.State

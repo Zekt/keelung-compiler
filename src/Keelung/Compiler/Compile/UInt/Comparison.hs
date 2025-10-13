@@ -1,5 +1,6 @@
 module Keelung.Compiler.Compile.UInt.Comparison (assertLTE, assertLT, assertGTE, assertGT, assertNonZero) where
 
+import Control.Monad (when, forM_, foldM, foldM_)
 import Control.Monad.Except
 import Control.Monad.RWS
 import Data.Bits qualified

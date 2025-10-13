@@ -1,5 +1,6 @@
 module Keelung.Compiler.Compile.UInt.Addition (addLimbColumn, compileAdd, compileSub) where
 
+import Control.Monad (foldM_)
 import Control.Monad.Except
 import Control.Monad.RWS
 import Data.Bits qualified

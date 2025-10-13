@@ -1,6 +1,6 @@
 module Keelung.Compiler.Compile.UInt.CLMul (compileCLMulU) where
 
-import Control.Monad.Except
+import Control.Monad (forM_)
 import Data.Field.Galois (GaloisField)
 import Keelung.Compiler.Compile.Boolean qualified as Boolean
 import Keelung.Compiler.Compile.Monad

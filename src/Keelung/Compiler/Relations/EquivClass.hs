@@ -32,7 +32,7 @@ module Keelung.Compiler.Relations.EquivClass
 where
 
 import Control.DeepSeq (NFData)
-import Control.Monad.Except
+import Control.Monad.Except hiding (mapError)
 import Control.Monad.Writer
 import Data.Field.Galois (Binary, Prime)
 import Data.Map qualified as Map

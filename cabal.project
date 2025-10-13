@@ -2,12 +2,12 @@ packages: .
 
 source-repository-package
     type: git
-    location: https://github.com/btq-ag/galois-field.git
-    tag: d7d0da6b5df8045afdfb820ba8d08f34dc4c3e58
+    location: https://github.com/Zekt/galois-field.git
+    tag: c4a6445aa7d1f73098a5f5c4a98aec8f0f679c1c
 
 source-repository-package
     type: git
-    location: https://github.com/btq-ag/keelung.git
-	tag: 94b2a01d7c0ed46ae543580cce87b30492ebbdbf
+    location: https://github.com/Zekt/keelung.git
+	  tag: 735fc9bdaa63964feb6a312258e8499aec497133
 
-with-compiler: ghc-9.2.8
+with-compiler: ghc-9.8.4

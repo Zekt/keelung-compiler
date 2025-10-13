@@ -7,6 +7,7 @@
 
 module Keelung.Interpreter (runAndOutputWitnesses, run, interpretDivMod, interpretCLDivMod, Error (..)) where
 
+import Control.Monad (forM_, when, liftM2, void)
 import Control.Monad.Except
 import Control.Monad.RWS
 import Data.Bits (Bits (..))

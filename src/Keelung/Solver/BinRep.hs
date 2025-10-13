@@ -6,6 +6,7 @@
 -- | Intended to be qualified as `BinRep`
 module Keelung.Solver.BinRep (BinRep (..), isSatisfiable, findAssignment, range) where
 
+import Control.Monad (guard, mzero)
 import Control.Monad.RWS
 import Data.Bits (xor)
 import Data.Bits qualified

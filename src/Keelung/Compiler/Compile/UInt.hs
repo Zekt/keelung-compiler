@@ -10,7 +10,7 @@ module Keelung.Compiler.Compile.UInt
   )
 where
 
-import Control.Monad.Except
+import Control.Monad (forM_, zipWithM_)
 import Control.Monad.RWS
 import Data.Either qualified as Either
 import Data.Field.Galois (GaloisField)

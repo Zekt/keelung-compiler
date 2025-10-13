@@ -6,6 +6,7 @@
 module Keelung.Compiler.Compile (run) where
 
 import Control.Arrow (left)
+import Control.Monad (when, forM_, foldM)
 import Control.Monad.Except
 import Control.Monad.RWS
 import Data.Field.Galois (GaloisField)

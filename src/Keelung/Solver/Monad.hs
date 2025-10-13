@@ -5,6 +5,7 @@
 module Keelung.Solver.Monad where
 
 import Control.DeepSeq (NFData)
+import Control.Monad (forM_, when, foldM_)
 import Control.Monad.Except
 import Control.Monad.RWS.Strict
 import Data.Bits qualified

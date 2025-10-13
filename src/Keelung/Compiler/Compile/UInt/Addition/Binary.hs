@@ -1,6 +1,6 @@
 module Keelung.Compiler.Compile.UInt.Addition.Binary (compile) where
 
-import Control.Monad.Except
+import Control.Monad (forM_)  
 import Data.Bits qualified
 import Data.Field.Galois (GaloisField)
 import Keelung (widthOf)

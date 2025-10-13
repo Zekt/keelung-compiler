@@ -8,7 +8,7 @@ module Keelung.Solver
   )
 where
 
-import Control.Monad qualified as Monad
+import Control.Monad as Monad (join, forM_, when)
 import Control.Monad.Except
 import Control.Monad.RWS
 import Data.Bits qualified

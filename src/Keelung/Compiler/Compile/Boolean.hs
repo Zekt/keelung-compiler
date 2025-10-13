@@ -1,5 +1,6 @@
 module Keelung.Compiler.Compile.Boolean (compile, andBs, xorBs, computeLTUVarVar) where
 
+import Control.Monad (foldM, zipWithM)
 import Control.Monad.State
 import Data.Bits qualified
 import Data.Either qualified as Either

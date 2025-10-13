@@ -14,6 +14,7 @@
 --    Optimization are run in the order above, if we have learned a new fact of a certain category, we restart the optimization of that category.
 module Keelung.Compiler.Optimize.MinimizeConstraints (run) where
 
+import Control.Monad (when, foldM)
 import Control.Monad.Except
 import Control.Monad.State
 import Control.Monad.Writer
